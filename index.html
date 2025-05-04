@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Contactenos Doble A</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: initial;
+            background: linear-gradient(to bottom right, white, #FFF6ED);
+            color: #555;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .contact-bar {
+            background-color: #FFB8AC;
+            color: white;
+            padding: 10px 0;
+            font-weight: bold;
+        }
+
+        header {
+            background-color: #FFF6ED;
+            padding: 4px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative; /* Para posicionar elementos hijos absolutamente */
+        }
+
+        /* Estilo para el logo en la esquina superior izquierda */
+        .logo {
+            position: absolute; /* Posicionamiento absoluto respecto a header */
+            top: 10px; /* Ajusta según sea necesario */
+            left: 10px; /* Ajusta según sea necesario */
+            width: 150px; /* Tamaño deseado */
+            height: auto;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #FFB8AC;
+            text-shadow: 2px 2px #ffe4ec;
+            margin: 0; /* Para mantener alineación */
+            padding-top: 10px; /* Para dejar espacio si hay logo */
+        }
+
+        h3 {
+            color: #565555;
+            margin: 0; /* Para mantener alineación */
+            padding-top: 10px; /* Para dejar espacio si hay logo */
+        }
+
+
+        .nav-buttons {
+            margin: 20px 0;
+        }
+
+        /* Botones con estilos personalizados y transición */
+        .btn-morado {
+            background-color: #FFB8AC;
+            color: white;
+            border: none;
+            margin: 5px;
+            padding: 10px 20px;
+            font-weight: bold;
+            border-radius: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .btn-morado:hover {
+            background-color: #C7E5E4;
+            transform: scale(1.05);
+        }
+
+
+        .content {
+            padding: 50px 20px;
+        }
+
+
+        footer {
+            background-color: #FFB8AC;
+            padding: 10px;
+        }
+
+       
+        p {
+            font-family: initial;
+            color: #565555;
+        }
+        .overlay-text {
+            font-family: Arial;
+            position: absolute;
+            top: 50px; /* Ajusta la posición vertical si quieres */
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: white;
+        }
+
+                 /* Estilos para el contenedor del submenú */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Estilo para el contenido del submenú */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; /* debajo del botón */
+    left: 0;
+    background-color: #FFB8AC;
+    min-width: 160px;
+    z-index: 1;
+    flex-direction: column;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+
+        main {
+            padding: 20px;
+        }
+
+        .contact-form {
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-form h2 {
+            margin-top: 0;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background: #FFB8AC;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #C7E5E4;
+        }
+/* Estilos para la sección adicional debajo del pie de página */
+.footer-info {
+    background-color: #FFE4E1; /* un color suave para distinguirse */
+    padding: 15px 20px;
+    text-align: center;
+    font-family: initial;
+    color: #555;
+    border-top: 2px solid #FFB8AC;
+    margin-top: 20px;
+}
+
+/* Estilo para la información de la tienda */
+.info-tienda {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+/* Estilo para la frase filosófica */
+.frase-filosofica {
+    font-style: italic;
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+    </style>
+</head>
+<body>
+    <div class="contact-bar">
+        ¡Descubre, Explora y Prueba! 
+    </div>
+
+<header>
+    <img src="fotoos/logo para moños artesanales estetico beige.png" alt="Logo" class="logo" />
+    <h1>Panaderia y Reposteria Doble A</h1>
+    <div class="nav-buttons">
+        <button class="btn btn-morado" onclick="scrollToSection('inicio')">Inicio</button>
+
+</header>
+
+    <header>
+        <h3>Contacte con Nuestra Tienda</h3>
+    </header>
+
+    <main>
+        <section class="contact-form">
+            <h2>Envíanos un Mensaje</h2>
+<form action="https://formsubmit.co/bef139434@gmail.com" method="POST">
+    <label for="name">Nombre:</label>
+    <input type="text" name="name" id="name" required>
+
+    <label for="email">Correo Electrónico:</label>
+    <input type="email" name="email" id="email" required>
+
+    <label for="subject">Asunto:</label>
+    <input type="text" name="subject" id="subject" required>
+
+    <label for="message">Mensaje:</label>
+    <textarea name="message" id="message" cols="30" required></textarea>
+
+    <button type="submit">Enviar</button>
+</form>
+
+        </section>
+    </main>
+
+    <!-- Después del footer, antes del cierre del body, agregué lo siguiente: -->
+<footer>
+    &copy; 2025 Panadería y Repostería Doble A. Todos los derechos reservados.
+</footer>
+
+<!-- Contenedor para información adicional y frase filosófica -->
+<div class="footer-info">
+    <p class="info-tienda">En Doble A, cada dulce es una expresión de amor y tradición.</p>
+    <p class="frase-filosofica">"La felicidad se comparte con un pedazo de pastel."</p>
+</div>
+
+</body>
+</html>
